@@ -33,6 +33,7 @@ class HomeController extends Controller
 
         return view('home', [
             'user' => $user,
+            'base_url' => config('app.url'),
         ]);
     }
 
